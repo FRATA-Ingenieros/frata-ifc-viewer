@@ -76,13 +76,32 @@
   transform: translateY(0);
 }
 
-.tree-menu {
+.three-menu {
     height: calc(50% - 1.5rem);
     border: var(--border);
 }
 
 .property-menu {    
+    overflow-y:auto;
     height: calc(50% - 1.5rem);
+}
+
+.property-root {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem;
+    border-bottom: var(--border);
+}
+
+.property-name {
+    width: 40%;
+    font-size: 14px;
+}
+
+.property-value {    
+    width: 60%;    
+    text-align: right;
+    font-size: 14px;
 }
 
 #viewer-container {
