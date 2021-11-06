@@ -103478,7 +103478,7 @@ container.onmousemove = () => viewer.IFC.prePickIfcItem();
 container.ondblclick = async () => {
     const found = await viewer.IFC.pickIfcItem(true);
     if(found === null || found === undefined) return;
-    const props = await viewer.IFC.getProperties(found.modelID, found.id, true);
+    const props = await viewer.IFC.getProperties(found.modelID, found.id, true);    
     console.log(props);
 
     createPropertyMenu(props);
@@ -103494,7 +103494,7 @@ function createPropertyMenu(props) {
     props.type;
 
     delete props.mats;
-    delete props.psets;
+    // delete props.psets;
     delete props.type;
     
     for(let propertyName in props) {
