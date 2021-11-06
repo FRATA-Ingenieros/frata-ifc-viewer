@@ -5,11 +5,12 @@
     overflow: hidden;
     font-family: 'Roboto',sans-serif;
 
-    --dark-grey: #888888;
+    --dark-grey: #f0ecec;
     --border: solid 1px var(--dark-grey)
 }
 
 .app-container {
+    box-shadow: 2px 0px 7px 0px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: row;
     position: absolute;
@@ -19,9 +20,10 @@
 .sidebar {
     min-width: 25rem;
     height: 100vh;
-    background-color: #FAFFFF;    
-    border: var(--border);
+    background-color: white;    
+    border: var(--border);      
 }
+
 
 .button-container {
     display: flex;
