@@ -1,0 +1,22 @@
+{
+  "name": "visualizador_final",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -c -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "three": "^0.132.2",
+    "web-ifc": "^0.0.25",
+    "web-ifc-viewer": "^1.0.102"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^13.0.6",
+    "rollup": "^2.59.0"
+  }
+}
