@@ -103465,7 +103465,7 @@ GUI.loader.onclick = () => GUI.input.click();
 GUI.input.onchange = () => {
     const file = event.target.files[0];
     const url = URL.createObjectURL(file);
-    viewer.IFC.loadIfcUrl(url);
+    viewer.IFC.loadIfcUrl(url);        
 };
 
 //Precargar modelos

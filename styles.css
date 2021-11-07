@@ -10,7 +10,7 @@
 }
 
 .app-container {
-    box-shadow: 2px 0px 7px 0px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 2px 0px 7px 0px rgba(0, 0, 0, 0.2); */
     display: flex;
     flex-direction: row;
     position: absolute;
@@ -21,8 +21,61 @@
     min-width: 25rem;
     height: 100vh;
     background-color: white;    
-    border: var(--border);      
+    /* border: var(--border);       */
+    /* box-shadow: 0 0 0.06rem rgb(54 53 69 / 20%), 0.12rem 0.12rem 0.5rem rgb(54 53 69 / 30%); */
 }
+
+
+.toolbar-left {
+    /* background-color: #e2e2e7;       */
+    height: 100%;
+    width: 100%;
+    padding: 0.25rem 0;
+    /* display: grid; */
+    /* grid-auto-flow: row; */
+    align-content: top;
+    justify-items: left;
+    display: flex;
+    /* border-top-right-radius: 0.12rem;
+    border-bottom-right-radius: 0.12rem;
+    width: 2.5rem;
+    padding: 0.25rem 0;
+    display: grid;
+    grid-auto-flow: row;
+    align-content: center;
+    justify-items: center; */
+}
+
+.toolbar-left-buttons {
+    width: 3rem;
+    padding: 0 0.15rem;
+    /* height: 100%; */
+    /* height: 100%; */
+    /* width: 2.5rem;     */
+}
+
+.toolbar-left-body {
+    background-color: brown;    
+    height: 100%;
+    width: 100%;
+
+}
+
+.btn {
+    margin-bottom: 0.2rem;
+    /* margin-right: 1rem; */
+    width: 100%;
+}
+
+
+
+
+
+
+/* .button-selected{
+    background-color: coral;
+}
+
 
 
 .button-container {
@@ -79,10 +132,11 @@
 .three-menu {
     height: calc(50% - 1.5rem);
     border: var(--border);
-}
+} */
 
 .property-menu {    
     overflow-y:auto;
+    width: 100%;
     height: calc(50% - 1.5rem);
 }
 
