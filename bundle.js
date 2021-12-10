@@ -103469,7 +103469,7 @@ GUI.input.onchange = () => {
 };
 
 //Precargar modelos
-viewer.IFC.loadIfcUrl('test.ifc');
+// viewer.IFC.loadIfcUrl('test.ifc');
 
 //Seleccionar elementos
 container.onmousemove = () => viewer.IFC.prePickIfcItem();
