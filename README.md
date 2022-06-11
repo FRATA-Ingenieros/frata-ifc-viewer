@@ -1,3 +1,3 @@
-# 👩‍🏫 QC Ingenieros CDE
+# 👩‍🏫 FRATA INGENIEROS
 
-Aplicacion web QC Ingenieros SAC
+Aplicacion web FRATA INGENIEROS
