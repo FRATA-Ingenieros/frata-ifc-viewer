@@ -25539,7 +25539,7 @@ function WebGLRenderer( parameters = {} ) {
 
 		_currentDrawBuffers[ 0 ] = 1029;
 
-		info = new WebGLInfo();
+		info = new WebGLInfo( _gl );
 		properties = new WebGLProperties();
 		textures = new WebGLTextures( _gl, extensions, state, properties, capabilities, utils, info );
 		cubemaps = new WebGLCubeMaps( _this );
@@ -47182,7 +47182,7 @@ var require_web_ifc_mt = __commonJS({
         }
         moduleOverrides = null;
         if (Module["arguments"])
-          Module["arguments"];
+          ;
         if (Module["thisProgram"])
           thisProgram = Module["thisProgram"];
         if (Module["quit"])
@@ -53090,7 +53090,7 @@ var require_web_ifc = __commonJS({
         }
         moduleOverrides = null;
         if (Module["arguments"])
-          Module["arguments"];
+          ;
         if (Module["thisProgram"])
           thisProgram = Module["thisProgram"];
         if (Module["quit"])
@@ -121444,6 +121444,7 @@ const viewer = new IfcViewerAPI({container, backgroundColor: new Color(243,243,2
 viewer.axes.setAxes();
 viewer.shadowDropper.darkness = 1.5;
 
+
 // viewer.addGrid();
 
 //Obtener el input
@@ -121463,13 +121464,15 @@ viewer.shadowDropper.darkness = 1.5;
 
 //Precargar modelos
 //viewer.IFC.loader.ifcManager.useWebWorkers(true,'frata_concrete.ifc');
+// const ifcUrl = URL.createObjectURL('frata_concrete.ifc');
+// viewer.IFC.loadIfcUrl(ifcUrl);
 viewer.IFC.loadIfcUrl('frata_concrete.ifc');
 // viewer.IFC.setWasmPath('frata_concrete.ifc');
 
-viewer.IFC.loader.ifcManager.applyWebIfcConfig({
-    USE_FAST_BOOLS: true,
-    COORDINATE_TO_ORIGIN: true
-  });
+// viewer.IFC.loader.ifcManager.applyWebIfcConfig({
+//     USE_FAST_BOOLS: true,
+//     COORDINATE_TO_ORIGIN: true
+//   });
 
 //Seleccionar elementos
 container.onmousemove = () => viewer.IFC.prePickIfcItem();

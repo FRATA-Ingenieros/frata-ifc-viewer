@@ -12,6 +12,7 @@ const viewer = new IfcViewerAPI({container, backgroundColor: new Color(243,243,2
 viewer.axes.setAxes();
 viewer.shadowDropper.darkness = 1.5;
 
+
 // viewer.addGrid();
 
 //Obtener el input
@@ -31,13 +32,15 @@ viewer.shadowDropper.darkness = 1.5;
 
 //Precargar modelos
 //viewer.IFC.loader.ifcManager.useWebWorkers(true,'frata_concrete.ifc');
+// const ifcUrl = URL.createObjectURL('frata_concrete.ifc');
+// viewer.IFC.loadIfcUrl(ifcUrl);
 viewer.IFC.loadIfcUrl('frata_concrete.ifc');
 // viewer.IFC.setWasmPath('frata_concrete.ifc');
 
-viewer.IFC.loader.ifcManager.applyWebIfcConfig({
-    USE_FAST_BOOLS: true,
-    COORDINATE_TO_ORIGIN: true
-  });
+// viewer.IFC.loader.ifcManager.applyWebIfcConfig({
+//     USE_FAST_BOOLS: true,
+//     COORDINATE_TO_ORIGIN: true
+//   });
 
 //Seleccionar elementos
 container.onmousemove = () => viewer.IFC.prePickIfcItem();
